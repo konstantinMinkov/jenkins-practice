@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''cd ./jenkins-spring-boot-client
-mvn clean install'''
+        sh 'cd ./jenkins-spring-boot-client'
+        sh 'mvn clean install'
       }
     }
   }
